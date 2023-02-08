@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - Task3</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <h3>MyTodo.</h3>
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+        <button class="nav_btn">All Todos</button>
+    </div>
+    <div class="main">
+            <div class="clip">
+                <img src="./images/notemodel.png" alt="">
+                <div class="textbox">
+                    <h1>Todo App</h1>
+                    <p>Organized and Accessible</p>
+                    <div class="btns">
+                        <button id="create">Create Todo</button>
+                        <button id="show">Show Todos</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="add">
+                <div class="box1">
+                    <div class="ipt">
+                        <label for="addtodo">Create Todo*</label>
+                        <input placeholder="Write your todo..." value="" type="text" id="addtodo" name="addtodo">
+                    </div>
+                    <div class="addbtn">
+                        <button id="save">Add</button>
+
+                    </div>
+                </div>
+                <button class="close" id="addclose">Close</button>
+
+            </div>
+            <div class="show">
+
+                
+                
+                <div class="box2">
+                    <div class="show_head">
+                        <h3>All Todos</h3>
+                    </div>
+                    <div class="rows">
+
+                        <div class="row">
+                            <div class="txt">
+                                <p>&#x2022; ${item.value}</p>
+                            </div>
+                            <div class="dicon">
+                                <i class="ri-delete-bin-3-line"></i>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+                <button class="close" id="showclose">Close</button>
+            </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
